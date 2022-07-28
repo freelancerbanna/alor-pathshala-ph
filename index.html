@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      h1 {
+        font-family: "Oswald";
+      }
+      p {
+        font-family: "Arima";
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -30,142 +43,353 @@
         },
       };
     </script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+
     <title>Alor Pathshala | Banna</title>
   </head>
-  <body class="bg-white">
+  <body>
     <!-- header section start -->
     <header></header>
     <!-- header section ends -->
-    <!-- banner section start -->
-    <section class="container mx-auto rounded-[5px]">
-      <div class="carousel w-full h-[700px]">
-        <div
-          id="slide1"
-          class="carousel-item relative w-full flex items-center justify-center"
-        >
-          <div class="absolute overflow-hidden w-full h-full top-0 left-0">
+    <main class="lg:max-w-[1320px] mx-auto">
+      <!-- banner section start -->
+      <section class="w-full rounded-[5px]">
+        <div class="carousel w-full h-[700px]">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full flex items-center justify-center"
+          >
+            <div class="absolute overflow-hidden w-full h-full top-0 left-0">
+              <div
+                class="absolute w-full h-full top-0 left-0 content-[''] bg-[#00000080]"
+              ></div>
+              <img
+                src="./assets/images/cover/cover-1.png"
+                class="w-full h-full object-cover"
+              />
+            </div>
             <div
-              class="absolute w-full h-full top-0 left-0 content-[''] bg-[#00000080]"
-            ></div>
-            <img
-              src="./assets/images/cover/cover-1.png"
-              class="w-full h-full object-cover"
-            />
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[45%]"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="h-[336px] w-[671px] relative z-1 flex flex-col items-center justify-center"
+            >
+              <h1
+                class="heading w-[632px] h-[170px] text-center font-semibold text-[65px] leading-[85px] font-arima text-white mb-[20px]"
+              >
+                Get Started Digital Learning
+              </h1>
+              <p
+                class="leading-[30px] text-[18px] text-[#F4F4F4] font-oswald w-full h-[60px] text-center mb-[30px]"
+              >
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button
+                class="btn bg-[#289BDE] h-[56px] w-[182px] border-none outline-none text-[20px] text-white text-center"
+              >
+                Get started
+              </button>
+            </div>
           </div>
           <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            id="slide2"
+            class="carousel-item relative w-full flex items-center justify-center"
           >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+            <div class="absolute overflow-hidden w-full h-full top-0 left-0">
+              <div
+                class="absolute w-full h-full top-0 left-0 content-[''] bg-[#00000080]"
+              ></div>
+              <img
+                src="./assets/images/cover/cover-2.jpg"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[45%]"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="h-[336px] w-[671px] relative z-1 flex flex-col items-center justify-center"
+            >
+              <h1
+                class="heading w-[632px] h-[170px] text-center font-semibold text-[65px] leading-[85px] font-arima text-white mb-[20px]"
+              >
+                Get Started Digital Learning
+              </h1>
+              <p
+                class="leading-[30px] text-[18px] text-[#F4F4F4] font-oswald w-full h-[60px] text-center mb-[30px]"
+              >
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button
+                class="btn bg-[#289BDE] h-[56px] w-[182px] border-none outline-none text-[20px] text-white text-center"
+              >
+                Get started
+              </button>
+            </div>
           </div>
           <div
-            class="h-[336px] w-[671px] relative z-1 flex flex-col items-center justify-center"
+            id="slide3"
+            class="carousel-item relative w-full flex items-center justify-center"
           >
-            <h1
-              class="heading w-[632px] h-[170px] text-center font-semibold text-[65px] leading-[85px] font-arima text-white mb-[20px]"
+            <div class="absolute overflow-hidden w-full h-full top-0 left-0">
+              <div
+                class="absolute w-full h-full top-0 left-0 content-[''] bg-[#00000080]"
+              ></div>
+              <img
+                src="./assets/images/cover/cover-3.jpg"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[45%]"
             >
-              Get Started Digital Learning
-            </h1>
-            <p
-              class="leading-[30px] text-[18px] font-oswald w-full h-[60px] text-center mb-[30px]"
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="h-[336px] w-[671px] relative z-1 flex flex-col items-center justify-center"
             >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-            <button
-              class="btn bg-[#289BDE] h-[56px] w-[182px] border-none outline-none text-[20px] text-white text-center"
+              <h1
+                class="heading w-[632px] h-[170px] text-center font-semibold text-[65px] leading-[85px] font-arima text-white mb-[20px]"
+              >
+                Get Started Digital Learning
+              </h1>
+              <p
+                class="leading-[30px] text-[18px] text-[#F4F4F4] font-oswald w-full h-[60px] text-center mb-[30px]"
+              >
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <button
+                class="btn bg-[#289BDE] h-[56px] w-[182px] border-none outline-none text-[20px] text-white text-center"
+              >
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section ends -->
+
+      <!-- courses section start -->
+      <section class="w-full flex flex-col items-center justify-center">
+        <div
+          class="w-[606px] h-[190px] mx-auto mt-16 flex flex-col items-center justify-center mb-10"
+        >
+          <h1
+            class="w-[549px] h-[120px] text-center text-teal-600 font-arima font-semibold text-[45px] leading-[60px]"
+          >
+            Discover Our Popular Courses
+          </h1>
+          <p
+            class="w-[606px] h-[60px] text-center font-oswald font-normal font-base leading-[30px] text-[#777777]"
+          >
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 w-full gap-[24px]">
+          <div
+            class="w-[648px] h-[200px] rounded-[5px] flex border border-solid border-[#E8E8E8] items-center"
+          >
+            <div class="w-[200px] h-[200px]">
+              <img
+                src="./assets/images/course/course-1.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="w-[397px] h-[133px] flex flex-col items-center ml-[24px]"
             >
-              Get started
-            </button>
+              <h2
+                class="w-full h-[38px] leading-[37px] text-[25px] font-semibold font-arima"
+              >
+                Fundamental Of UI/UX Design
+              </h2>
+              <p
+                class="font-oswald h-[48px] w-[397px] font-normal text-base leading-[24px]"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card.
+              </p>
+              <p
+                class="text-[#289BDE] font-semibold leading-[27px] text-lg self-start mt-2.5"
+              >
+                Price : 20$
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[648px] h-[200px] rounded-[5px] flex border border-solid border-[#E8E8E8] items-center"
+          >
+            <div class="w-[200px] h-[200px]">
+              <img
+                src="./assets/images/course/course-2.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="w-[397px] h-[133px] flex flex-col items-center ml-[24px]"
+            >
+              <h2
+                class="w-full h-[38px] leading-[37px] text-[25px] font-semibold font-arima"
+              >
+                Javascript Basic to advanced
+              </h2>
+              <p
+                class="font-oswald h-[48px] w-[397px] font-normal text-base leading-[24px]"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card.
+              </p>
+              <p
+                class="text-[#289BDE] font-semibold leading-[27px] text-lg self-start mt-2.5"
+              >
+                Price : 20$
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[648px] h-[200px] rounded-[5px] flex border border-solid border-[#E8E8E8] items-center"
+          >
+            <div class="w-[200px] h-[200px]">
+              <img
+                src="./assets/images/course/course-3.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="w-[397px] h-[133px] flex flex-col items-center ml-[24px]"
+            >
+              <h2
+                class="w-full h-[38px] leading-[37px] text-[25px] font-semibold font-arima"
+              >
+                Fullstack Web Development
+              </h2>
+              <p
+                class="font-oswald h-[48px] w-[397px] font-normal text-base leading-[24px]"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card.
+              </p>
+              <p
+                class="text-[#289BDE] font-semibold leading-[27px] text-lg self-start mt-2.5"
+              >
+                Price : 20$
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[648px] h-[200px] rounded-[5px] flex border border-solid border-[#E8E8E8] items-center"
+          >
+            <div class="w-[200px] h-[200px]">
+              <img
+                src="./assets/images/course/course-4.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="w-[397px] h-[133px] flex flex-col items-center ml-[24px]"
+            >
+              <h2
+                class="w-full h-[38px] leading-[37px] text-[25px] font-semibold font-arima"
+              >
+                Digital Marketing
+              </h2>
+              <p
+                class="font-oswald h-[48px] w-[397px] font-normal text-base leading-[24px]"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card.
+              </p>
+              <p
+                class="text-[#289BDE] font-semibold leading-[27px] text-lg self-start mt-2.5"
+              >
+                Price : 20$
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[648px] h-[200px] rounded-[5px] flex border border-solid border-[#E8E8E8] items-center"
+          >
+            <div class="w-[200px] h-[200px]">
+              <img
+                src="./assets/images/course/course-5.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="w-[397px] h-[133px] flex flex-col items-center ml-[24px]"
+            >
+              <h2
+                class="w-full h-[38px] leading-[37px] text-[25px] font-semibold font-arima"
+              >
+                Photography Basic Rules
+              </h2>
+              <p
+                class="font-oswald h-[48px] w-[397px] font-normal text-base leading-[24px]"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card.
+              </p>
+              <p
+                class="text-[#289BDE] font-semibold leading-[27px] text-lg self-start mt-2.5"
+              >
+                Price : 20$
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[648px] h-[200px] rounded-[5px] flex border border-solid border-[#E8E8E8] items-center"
+          >
+            <div class="w-[200px] h-[200px]">
+              <img
+                src="./assets/images/course/course-6.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="w-[397px] h-[133px] flex flex-col items-center ml-[24px]"
+            >
+              <h2
+                class="w-full h-[38px] leading-[37px] text-[25px] font-semibold font-arima"
+              >
+                Motion Graphics
+              </h2>
+              <p
+                class="font-oswald h-[48px] w-[397px] font-normal text-base leading-[24px]"
+              >
+                Some quick example text to build on the card title and make up
+                the bulk of the card.
+              </p>
+              <p
+                class="text-[#289BDE] font-semibold leading-[27px] text-lg self-start mt-2.5"
+              >
+                Price : 20$
+              </p>
+            </div>
           </div>
         </div>
         <div
-          id="slide2"
-          class="carousel-item relative w-full flex items-center justify-center"
+          class="btn w-[248px] h-[56px] mx-auto text-center bg-[#289BDE] font-semibold text-xl leading-[30px] outline-none border-none mt-[50px]"
         >
-          <div class="absolute overflow-hidden w-full h-full top-0 left-0">
-            <div
-              class="absolute w-full h-full top-0 left-0 content-[''] bg-[#00000080]"
-            ></div>
-            <img
-              src="./assets/images/cover/cover-2.jpg"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-          <div
-            class="h-[336px] w-[671px] relative z-1 flex flex-col items-center justify-center"
-          >
-            <h1
-              class="heading w-[632px] h-[170px] text-center font-semibold text-[65px] leading-[85px] font-arima text-white mb-[20px]"
-            >
-              Get Started Digital Learning
-            </h1>
-            <p
-              class="leading-[30px] text-[18px] font-oswald w-full h-[60px] text-center mb-[30px]"
-            >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-            <button
-              class="btn bg-[#289BDE] h-[56px] w-[182px] border-none outline-none text-[20px] text-white text-center"
-            >
-              Get started
-            </button>
-          </div>
+          See More Courses
         </div>
-        <div
-          id="slide3"
-          class="carousel-item relative w-full flex items-center justify-center"
-        >
-          <div class="absolute overflow-hidden w-full h-full top-0 left-0">
-            <div
-              class="absolute w-full h-full top-0 left-0 content-[''] bg-[#00000080]"
-            ></div>
-            <img
-              src="./assets/images/cover/cover-3.jpg"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-          <div
-            class="h-[336px] w-[671px] relative z-1 flex flex-col items-center justify-center"
-          >
-            <h1
-              class="heading w-[632px] h-[170px] text-center font-semibold text-[65px] leading-[85px] font-arima text-white mb-[20px]"
-            >
-              Get Started Digital Learning
-            </h1>
-            <p
-              class="leading-[30px] text-[18px] font-oswald w-full h-[60px] text-center mb-[30px]"
-            >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
-            </p>
-            <button
-              class="btn bg-[#289BDE] h-[56px] w-[182px] border-none outline-none text-[20px] text-white text-center"
-            >
-              Get started
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- banner section ends -->
+      </section>
+      <!-- courses section ends -->
+    </main>
   </body>
 </html>
