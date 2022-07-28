@@ -22,15 +22,20 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      h1 {
-        font-family: "Oswald";
-      }
-      p {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
         font-family: "Arima";
       }
+      p {
+        font-family: "Oswald";
+      }
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -390,6 +395,76 @@
         </div>
       </section>
       <!-- courses section ends -->
+
+      <!-- elearning section start -->
+      <section
+        class="w-full h-[806px] rounded-[5px] bg-[#F4FAFD] mt-[130px] flex items-center"
+      >
+        <div class="w-[600px] h-full relative overflow-hidden">
+          <img
+            src="./assets/images/working.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-[600px] h-[546px] flex flex-col ml-[60px]">
+          <h2
+            class="w-[549px] h-[120px] font-semibold text-[45px] leading-[60px]"
+          >
+            Explore The elearning Institute
+          </h2>
+          <div
+            class="w-[606px] h-[210px] text-base font-normal leading-[30px] text-[#777777]"
+          >
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure
+            </p>
+            <p class="pt-10">
+              Anything embarrassing hidden in the middle of text. All the Lorem
+              Ipsum generators on the Internet tend to repeat predefined.
+            </p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="flex flex-col">
+              <span
+                class="w-[118px] h-[60px] font-semibold leading-[60px] text-[45px] text-[#1D1D1D]"
+                >3.2k+</span
+              >
+              <span class="font-medium text-xl leading-[30px] text-[#777777]"
+                >Online Course</span
+              >
+            </p>
+            <p class="flex flex-col">
+              <span
+                class="w-[118px] h-[60px] font-semibold leading-[60px] text-[45px] text-[#1D1D1D]"
+                >600+</span
+              >
+              <span class="font-medium text-xl leading-[30px] text-[#777777]"
+                >Expert member</span
+              >
+            </p>
+            <p class="flex flex-col">
+              <span
+                class="w-[118px] h-[60px] font-semibold leading-[60px] text-[45px] text-[#1D1D1D]"
+                >1k+</span
+              >
+              <span class="font-medium text-xl leading-[30px] text-[#777777]"
+                >Rating & Review</span
+              >
+            </p>
+          </div>
+          <div
+            class="btn w-[175px] h-[56px] text-center bg-[#289BDE] font-semibold text-xl leading-[30px] outline-none border-none mt-[50px]"
+          >
+            Read More
+          </div>
+        </div>
+      </section>
+      <!-- elearning section ends -->
     </main>
   </body>
 </html>
